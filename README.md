@@ -1,18 +1,33 @@
-## Getting Started
+# Conversor de Divisas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desafio de Allura para implementar el consumo de Apis con codigo java, implementando los siguientes elementos:
 
-## Folder Structure
+### ExchangeRate Api
+Api utilizada para obtener los parametros de conversion de cada divisa con nuestra divisa base
 
-The workspace contains two folders by default, where:
+https://www.exchangerate-api.com/docs/overview
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Java.net
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Utilizando esta libreria implementamos los modulos:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- `HttpClient`
+- `HttpRequest`
+- `HttResponse`
 
-## Dependency Management
+Utilizados para generar una conexion a la Api y posteriormente realizar una consulta de tipo GET para optener los datos necesario
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Jave.time
+
+Se utiliza para obtener la fecha y hora actual de la pc y colocarla en el registro de consultas que se an realizado con el metodo `LocalDateTime`
+
+### GSON
+
+Utilizamos la liberia gson para deszerializar los elementos que obtenemos del json que nos provee APi
+
+### JOptionPane
+
+Se crean crean ventanas interactivas con JOptionPane de tipo:
+
+- `showInputDialog` : Para solicitar datos
+- `showMessageDialog` : Para mostrar los datos
